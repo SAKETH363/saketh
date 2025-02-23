@@ -232,6 +232,51 @@ footer {
     font-size: 18px;
     margin: 5px 0;
 }
+        /* 🔹 Mobile & Tablet Styles (for screens 768px or smaller) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font for readability */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements */
+        text-align: center;
+    }
+
+    .rounds-container {
+        flex-direction: column; /* Stack rounds vertically */
+        align-items: center;
+    }
+
+    .round, .detail-box {
+        width: 95%; /* Make them take most of the screen width */
+    }
+
+    table {
+        width: 100%; /* Make tables fit small screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.rounds-container, .detailed-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures elements move to the next row on small screens */
+}
+img {
+    max-width: 100%; /* Makes images scale automatically */
+    height: auto; /* Maintains aspect ratio */
+}
+button {
+    padding: 12px 20px; /* Larger padding for touchscreens */
+    font-size: 18px; /* Bigger text for readability */
+    cursor: pointer;
+}
+
 
     </style>
 </head>
