@@ -19,20 +19,22 @@
     padding: 20px;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    text-align: center;
+    align-items: center; /* Keep everything centered */
 }
 
 .header-img {
-    width: 150px; /* Adjust width if needed */
+    width: 1000px; /* Adjust as needed */
     height: auto;
+    margin-bottom: 20px; /* Adds space between the two images */
 }
 
 .right-img {
-    width: 900px; /* Adjust width if needed */
+    width: 200px; /* Adjust as needed */
     height: auto;
-    order: -1; /* Moves the image above the text */
+    margin-top: 20px; /* Adds space above the Accenture logo */
 }
+
+
 
         h1 {
             margin: 0;
@@ -329,17 +331,161 @@ ul li a:hover {
     color: #070707;
     text-decoration: underline;
 }
+#favorite-vlogs {
+    text-align: center;
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.video-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Ensure the videos are responsive */
+iframe {
+    border-radius: 10px;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navigation Header */
+.navbar {
+    background: #1F1F1F;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation Menu */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #6a11cb;
+    color: #ffffff;
+}
+
+/* Responsive: Stack items on smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+}
 
 
     </style>
 </head>
 <body>
     <header>
-        <img src="left.png" alt="Left Logo" class="header-img">
+        <img src="Screenshot 2025-02-23 175418.png" alt="Left Logo" class="header-img">
         <h1>Accenture Recruitment Process 2026</h1>
-        <img src="Screenshot 2025-02-23 175418.png" alt="Right Logo" class="right-img">
+        <img src="left.png" alt="Right Logo" class="right-img">
     </header>
-
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#rounds">Online Test Process</a></li>
+                <li><a href="#additional-info">Additional Information</a></li>
+                <li><a href="#detailed-info">Detailed Topics</a></li>
+                <li><a href="#model-papers">Model Papers</a></li>
+                <li><a href="#youtube-videos">YouTube Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <section id="eligibility">
         <h2>Eligibility Criteria</h2>
         <table>
@@ -585,21 +731,7 @@ ul li a:hover {
         </ul>
     </section>
     <section id="resources">
-        <h2>Resources to Prepare for Accenture</h2>
-    
-        <details>
-            <summary>📌 YouTube Videos</summary>
-            <ul>
-                <li><a href="https://www.youtube.com/live/J0MOFUWXQaE?si=_1L9WO1dnzbIsElZ" target="_blank">Accenture Hiring Process</a></li>
-                <li><a href="https://www.youtube.com/watch?v=C6UYLO03JvE&list=PLKtofb3HgEyylA8K_n6183bBGsaUtH62V" target="_blank">Accenture Syllabus and Test Pattern 2024</a></li>
-                <li><a href="https://www.youtube.com/watch?v=PE1qXCl7RIA&list=PLd5_GYDTZQDaB29alh-YfA7sEoOhO2KpV" target="_blank">Accenture Pseudo Code Questions</a></li>
-                <li><a href="https://www.youtube.com/watch?v=amzh7QEaB-0&list=PLKtofb3HgEyyVYpMYF4mT5Ha7zR4nfRuO" target="_blank">Accenture Coding Assessment Questions 2024</a></li>
-                <li><a href="https://www.youtube.com/watch?v=SPVsr5KCdIM" target="_blank">Accenture Coding Questions with Answers 🔥</a></li>
-                <li><a href="https://www.youtube.com/watch?v=KkHO9iTJLbk&list=PLSw_QAAiP2dIs1c2j4iQyS3f-pL8FVM0q" target="_blank">Accenture Technical & Assessment Test 2024</a></li>
-                <li><a href="https://www.youtube.com/watch?v=zFRRvD6RFgg" target="_blank">Accenture Cognitive Revision (Aptitude, Verbal & Reasoning)</a></li>
-            </ul>
-        </details>
-    
+        <h2>Resources to Prepare for Accenture</h2>    
         <details>
             <summary>📜 Previous Years' Papers</summary>
             <ul>
@@ -613,7 +745,39 @@ ul li a:hover {
             </ul>
         </details>
     </section>
-    
+    <section id="youtube-videos">
+        <h2>📌 <u>YOUTUBE VIDEOS</u></h2>
+        <div class="video-container">
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/J0MOFUWXQaE" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Hiring Process</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/C6UYLO03JvE" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Syllabus and Test Pattern 2024</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/PE1qXCl7RIA" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Pseudo Code Questions</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/amzh7QEaB-0" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Coding Assessment Questions 2024</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/SPVsr5KCdIM" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Coding Questions with Answers 🔥</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/KkHO9iTJLbk" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Technical & Assessment Test 2024</h3>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/zFRRvD6RFgg" frameborder="0" allowfullscreen></iframe>
+                <h3>Accenture Cognitive Revision (Aptitude, Verbal & Reasoning)</h3>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
